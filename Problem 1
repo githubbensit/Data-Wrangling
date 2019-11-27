@@ -1,0 +1,21 @@
+: l = {'Student' :['Ice Bear','Panda','Grizzly'], 'Math' : [80,95,79]}
+
+a = {'Student' :['Ice Bear','Panda','Grizzly'], 'Electronics' : [85,81,83]}
+
+o = {'Student' :['Ice Bear','Panda','Grizzly'], 'GEAS' : [90,79,93]}
+
+m = {'Student' :['Ice Bear','Panda','Grizzly'], 'ESAT' : [93,89,88]}
+
+l = pd.DataFrame(l, columns = ['Student','Math'])
+
+a = pd.DataFrame(a, columns = ['Student','Electronics'])
+
+o = pd.DataFrame(o, columns = ['Student','GEAS'])
+
+m = pd.DataFrame(m, columns = ['Student','ESAT'])
+
+b = pd.merge(l,a, how = 'left', on = 'Student')
+
+c= pd.merge(b,o, how = 'left', on = 'Student')
+
+d = pd.merge(c,m, how = 'left' , on = 'Student')
