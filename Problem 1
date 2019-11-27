@@ -1,4 +1,4 @@
-: l = {'Student' :['Ice Bear','Panda','Grizzly'], 'Math' : [80,95,79]}
+l = {'Student' :['Ice Bear','Panda','Grizzly'], 'Math' : [80,95,79]}
 
 a = {'Student' :['Ice Bear','Panda','Grizzly'], 'Electronics' : [85,81,83]}
 
